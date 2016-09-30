@@ -5,7 +5,7 @@ $(document).ready(function () {
 });
 
 function createRow() {
-$("#budgetbody").append('<tr> <td style="border: 2px dotted black; padding-top: 10px; padding-bottom: 10px; padding-right: 30px; padding-left: 30px;"><input type="text" class="summary" placeholder="Enter bill summary""></input></td> <td style="border: 2px dotted black; padding-top: 10px; padding-bottom: 10px; padding-right: 30px; padding-left: 30px; "><input onkeypress="return isNumberKey(event) " type="text" name="amount" class="amount" placeholder="Enter bill amount "></input></td> </tr>');
+$("#budgetbody").append('<tr> <td style="border: 2px dotted black; padding-top: 10px; padding-bottom: 10px; padding-right: 30px; padding-left: 30px;"><input type="text" class="summary" placeholder="Enter bill summary""></input></td> <td style="border: 2px dotted black; padding-top: 10px; padding-bottom: 10px; padding-right: 30px; padding-left: 30px; ">$<input onkeypress="return isNumberKey(event) " type="text" name="amount" class="amount" placeholder="Enter bill amount "></input></td> </tr>');
 
 }
 

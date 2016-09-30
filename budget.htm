@@ -33,13 +33,14 @@
             <tr id="row">
                 <td style="border: 2px dotted black; padding-top: 10px; padding-bottom: 10px; padding-right: 30px; padding-left: 30px;">
                     <input type="text" class="summary" placeholder="Enter bill summary" "></input></td>
-                <td style="border: 2px dotted black; padding-top: 10px; padding-bottom: 10px; padding-right: 30px; padding-left: 30px; "><input onkeypress="return isNumberKey(event) " type="text" name="amount" class="amount" placeholder="Enter bill amount "></input></td>
+                <td style="border: 2px dotted black; padding-top: 10px; padding-bottom: 10px; padding-right: 30px; padding-left: 30px; ">
+                    $<input onkeypress="return isNumberKey(event) " type="text" name="amount" class="amount" placeholder="Enter bill amount "></input></td>
             </tr>
             </tbody>
             <tbody id="budgetbody">
             <tr>
                 <td style="border: 1px solid black; color: navy; font-size: 20px; ">Total:</td>
-                <td style="border: 1px solid black; padding: 20px;"><input type="text" id="total" placeholder="Total Will Appear Here"></input></td>
+                <td style="border: 1px solid black; padding: 20px;">$<input type="text" id="total" placeholder="Total Will Appear Here"></input></td>
                 </tr>
             <tr>
                 <td style="border: 1px solid black; color: navy; font-size: 20px; "><button onclick="addMath();" class="btn btn-default" id="math" style="margin: 10px; ">Calculate Total</button></td>
