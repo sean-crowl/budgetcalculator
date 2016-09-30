@@ -34,7 +34,7 @@
                 <td style="border: 2px dotted black; padding-top: 10px; padding-bottom: 10px; padding-right: 30px; padding-left: 30px;">
                     <input type="text" class="summary" placeholder="Enter bill summary" "></input></td>
                 <td style="border: 2px dotted black; padding-top: 10px; padding-bottom: 10px; padding-right: 30px; padding-left: 30px; ">
-                    $<input onkeypress="return isNumberKey(event) " type="text" name="amount" class="amount" placeholder="Enter bill amount "></input></td>
+                    $<input onkeypress="return isNumberKey(event) " type="text" name="amount" class="amount" id="amount" placeholder="Enter bill amount "></input></td>
             </tr>
             </tbody>
             <tbody id="budgetbody">
@@ -48,6 +48,7 @@
                 </tr>
         </tbody>
     </table>
+    <button onclick="clearVal();" class="btn btn-default" id="clear" style="margin-top: 10px; margin-left: 475px; width: 300px;">Clear</button>
 </body>
 
 </html>

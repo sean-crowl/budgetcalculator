@@ -39,7 +39,13 @@ function calculateSum() {
     $("#total").val(sum.toFixed(2));
 }
 
+function clearVal() {
+    $(".summary").val("");
+    $(".amount").val("");
+    $("#total").val("");
+}
 
 $(function () {
     $("#add").on("click")
+    $("#clear").on("click")
 });
