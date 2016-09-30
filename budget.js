@@ -29,29 +29,16 @@ function addMath() {
 
 function calculateSum() {
     var sum = 0;
-    //iterate through each textboxes and add the values
     $(".amount").each(function () {
 
-        //add only if the value is number
         if (!isNaN(this.value) && this.value.length> 0) {
             sum += parseFloat(this.value);
         }
 
     });
-    //.toFixed() method will roundoff the final sum to 2 decimal places
     $("#total").val(sum.toFixed(2));
 }
 
-
-       /* function addMath(){
-    var arr = document.getElementsByName('amount');
-    var tot=0;
-    for(var i=0;i<(arr.length);i++){
-        if(parseInt(arr[i].value))
-            tot += parseInt(arr[i].value);
-    }
-    document.getElementById('total').value = tot; 
-} */
 
 $(function () {
     $("#add").on("click")
