@@ -24,14 +24,30 @@
     <h1 style="font-size: 40px; color: navy; margin-left: 380px;">Monthly Budget Calculator</h1>
     <table style="text-align: center; margin-left: 390px; border: 4px solid black;">
         <thead>
-            <th style="border: 1px solid black; color: navy; font-size: 20px;">Bill Summary:</th>
-            <th style="border: 1px solid black; color: navy; font-size: 20px;">Bill Amount: <button class="btn btn-default" id="add" style="margin: 10px;"><span class="glyphicon glyphicon-plus"></span></button></th>
-        </thead>
-        <tbody class="budgetbody">
             <tr>
-                <td style="border: 2px dotted black; padding-top: 10px; padding-bottom: 10px; padding-right: 30px; padding-left: 30px;"><input type="text" class="summary" placeholder="Enter bill summary""></input></td>
-                <td style="border: 2px dotted black; padding-top: 10px; padding-bottom: 10px; padding-right: 30px; padding-left: 30px;"><input type="text" class="amount" placeholder="Enter bill amount"></input></td>
+                <th style="border: 1px solid black; color: navy; font-size: 20px;">Bill Summary:</th>
+                <th style="border: 1px solid black; color: navy; font-size: 20px;">Bill Amount:</th>
             </tr>
+        </thead>
+        <tbody id="budgetbody">
+            <tr id="row">
+                <td style="border: 2px dotted black; padding-top: 10px; padding-bottom: 10px; padding-right: 30px; padding-left: 30px;">
+                    <input type="text" class="summary" placeholder="Enter bill summary" "></input></td>
+                <td style="border: 2px dotted black; padding-top: 10px; padding-bottom: 10px; padding-right: 30px; padding-left:
+                        30px; "><input onkeypress="return isNumberKey(event) " type="text " class="amount" placeholder="Enter bill amount "></input></td>
+            </tr>
+            </tbody>
+            <tbody id="budgetbody">
+            <tr>
+                <td style="border: 1px solid black; color: navy; font-size: 20px; ">Total:</td>
+                <td style="border: 1px solid black; padding: 20px;"><input type="text" class="total" placeholder="Total Will Appear Here"></input></td>
+                </tr>
+            <tr>
+                <td style="border: 1px solid black; color: navy; font-size: 20px; "><button class="btn btn-default
+                        " id="math" style="margin: 10px; ">Calculate Total</button></td>
+                <td style="border: 1px solid black; color: navy; font-size: 20px; "><button class="btn btn-default
+                        " id="add" style="margin: 10px; ">Add Row</button></td>
+                </tr>
         </tbody>
     </table>
 </body>
